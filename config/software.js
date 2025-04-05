@@ -21,7 +21,7 @@ function rot13( s ) { // cf. https://en.wikipedia.org/wiki/ROT13
 }
 
 function identify() {
-    const introMsg = [ "What is this?", `<img src="https://thisartworkdoesnotexist.com/?${ performance.now() }" style="width: 10rem; max-width: 100%;">` ];
+    const introMsg = [ "What is this?", `` ];
     return { message: introMsg, onInput( answer ) {
         return `Wrong! This is not "${ answer }"`;
     } };
